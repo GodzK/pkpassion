@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg';
 import pklogo from './assets/pkss.jpg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import Card from "./components/Card";
+import Card from "./components/card";
 
 function App() {
   const [data , setData] = useState([{
