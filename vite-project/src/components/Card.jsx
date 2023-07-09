@@ -4,17 +4,19 @@ function Card({ data }) {
   console.log(data);
 
   return (
-    <div>
-      <h3>Profile Card</h3>
-      {data?.map((val) => (
-        <div >
-         <img src ={val.img}  alt="" width="550px" height="550px"/>
-         <p>Name :{val.name} </p>
-         <p>Age :{val.age} </p>
-         <p>City : {val.city} </p>
-         <p>Followers:{val.followers} </p>
-         <p>likes:{val.likes} </p>
-         <p>photos:{val.photos} </p>
+    <div className="card">
+      <h3 className="card-header">Profile Card</h3>
+      {data?.map((val, index) => (
+        <div className="card-body" >
+          <img src={val.img} alt="" className="card-img-top bg-danger" style={{ width: "300px", height: "300px" }} />
+          <div className="card-text">
+            <p>Name: {val.name}</p>
+            <p>Age: {val.age}</p>
+            <p>City: {val.city}</p>
+            <p>Followers: {val.followers}</p>
+            <p>Likes: {val.likes}</p>
+            <p>Photos: {val.photos}</p>
+          </div>
         </div>
       ))}
     </div>
