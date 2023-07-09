@@ -1,12 +1,14 @@
 import React from 'react';
 import Nav from './nav';
 
-function contact() {
+function Contact() {
   return (
+    
     <div>
-      <Nav/>
+       <Nav />
+       <p>Contact</p>
     </div>
   );
 }
 
-export default contact;
+export default Contact;

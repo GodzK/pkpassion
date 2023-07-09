@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav{
     background-color: black;
     padding: 1rem;
@@ -5,4 +10,6 @@ nav{
 }
 nav a {
     color: #fff;
+    text-decoration: none;
+    margin: 1rem;
 }

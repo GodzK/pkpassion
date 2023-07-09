@@ -2,10 +2,12 @@
 import React from 'react';
 import Nav from './nav';
 
-function card({ data }) {
+function Card({ data }) {
   console.log(data);
 
   return (
+    <>
+    
     <div className="card">
       <h3 className="card-header">Profile Card</h3>
       {data?.map((val, index) => (
@@ -22,7 +24,8 @@ function card({ data }) {
         </div>
       ))}
     </div>
+    </>
   );
 }
 
-export default card;
+export default Card;

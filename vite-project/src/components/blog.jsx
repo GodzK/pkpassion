@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './nav';
 
-function blog() {
+function Blog() {
   return (
     <>
       <Nav/>
@@ -10,4 +10,4 @@ function blog() {
   );
 }
 
-export default blog;
+export default Blog;
